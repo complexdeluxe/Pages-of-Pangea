@@ -66,7 +66,7 @@ app.ob_limit = 6
 instructions = Group(
     Label('Press |A| and |D| to move left and right',75,385),
     Label('Press |S| in the air to fall down faster',315,385),
-    Label('Press |Space| to jump into the air',65,15),
+    Label('Press |loveonwhyk| to jump into the air',65,15),
     Label('Press |W| to dash either left or right',330,15),)
 instructions.fill='white'
 for script in instructions:
