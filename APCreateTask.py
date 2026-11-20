@@ -9,7 +9,7 @@ app.stage_index = 0
 #Main Song Source | https://audio.com/ruan-legal-1/audio/dimrain47-20-every-end
 # Audio Compresser || https://www.xconvert.com/audio-compressor
 song = Sound('Dimrain47+-+(20)+Every+End....mp3')
-song.isPlaying = True
+
 # All Sound Effect Sources:
 # DW Wipe || https://www.myinstants.com/en/instant/sirxrix-76980/
 # GTA5 Bus/Wasted || https://quicksounds.com/sound/90/gta-v-wasted-bus ted 
@@ -66,7 +66,7 @@ app.ob_limit = 6
 instructions = Group(
     Label('Press |A| and |D| to move left and right',75,385),
     Label('Press |S| in the air to fall down faster',315,385),
-    Label('Press |loveonwhyk| to jump into the air',65,15),
+    Label('Press |Space| to jump into the air',65,15),
     Label('Press |W| to dash either left or right',330,15),)
 instructions.fill='white'
 for script in instructions:
@@ -293,6 +293,6 @@ def onStep():
             app.score_label.centerX = 200
             app.score_label.centerY = 200
             app.score_label.size = 28
+song.isPlaying = True
 song.play()
-
 cmu_graphics.run()
